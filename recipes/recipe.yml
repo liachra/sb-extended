@@ -27,7 +27,7 @@ modules:
         - syncthing
         - steam
         - gamescope
-        - hangohud
+        - mangohud
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
