@@ -38,6 +38,9 @@ modules:
         - okular
         - kernel-devel # VirtualBox
         - kernel-headers # VirtualBox
+        - bottles
+        - wine
+        - winetricks
         - gcc # VirtualBox
         - make # VirtualBox
         - elfutils-libelf-devel # VirtualBox
@@ -60,8 +63,7 @@ modules:
           - io.github.peazip.PeaZip
           - org.signal.Signal
           - io.github.flattool.Warehouse
-          - com.heroicgameslauncher.hgl
-          - com.vysp3r.ProtonPlus
+          - net.davidotek.pupgui2
           - net.retrodeck.retrodeck
           - io.ente.photos
           - com.ktechpit.whatsie
