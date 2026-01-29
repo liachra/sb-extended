@@ -22,7 +22,6 @@ modules:
       packages:
         - trivalent-qt6-ui
         - kde-connect-nautilus
-        - proton-vpn-gnome-desktop
         - chromium
         - chromium-qt6-ui
         - syncthing
