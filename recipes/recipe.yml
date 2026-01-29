@@ -21,7 +21,7 @@ modules:
     repos:
       cleanup: true
       files:
-        - files/system/etc/yum.repos.d/virtualbox.repo
+        - /etc/yum.repos.d/virtualbox.repo
     install:
       packages:
         - trivalent-qt6-ui
