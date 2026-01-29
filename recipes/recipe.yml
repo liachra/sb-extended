@@ -63,7 +63,7 @@ modules:
           - io.github.peazip.PeaZip
           - org.signal.Signal
           - io.github.flattool.Warehouse
-          - com.vysp3r.ProtonPlus
+          - net.davidotek.pupgui2
           - net.retrodeck.retrodeck
           - io.ente.photos
           - com.ktechpit.whatsie
