@@ -35,6 +35,11 @@ modules:
         - libreoffice
         - protontricks
         - strawberry
+        - kernel-devel
+        - kernel-headers
+        - gcc
+        - make
+        - elfutils-libelf-devel
         - VirtualBox
     remove:
       packages:
