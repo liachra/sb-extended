@@ -28,6 +28,7 @@ modules:
         - steam
         - gamescope
         - mangohud
+        - libreoffice
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
