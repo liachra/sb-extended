@@ -52,11 +52,12 @@ modules:
           - org.kde.okular
           - io.github.peazip.PeaZip
           - org.signal.Signal
-          - com.github.unrud.VideoDownloader
           - io.github.flattool.Warehouse
           - com.heroicgameslauncher.hgl
           - com.vysp3r.ProtonPlus
           - net.retrodeck.retrodeck
+          - io.ente.photos
+          - com.ktechpit.whatsie
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
