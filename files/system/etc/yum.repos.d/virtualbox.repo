@@ -1,6 +1,6 @@
 [virtualbox]
 name=Oracle **VirtualBox**
-baseurl=http://download.virtualbox.org/virtualbox/$releasever/fedora/$basearch/
+baseurl=https://download.virtualbox.org/virtualbox/$releasever/fedora/$basearch/
 enabled=1
 gpgcheck=1
 repo_gpgcheck=1
