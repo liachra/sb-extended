@@ -29,6 +29,8 @@ modules:
         - gamescope
         - mangohud
         - libreoffice
+        - protontricks
+        - strawberry
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -50,7 +52,6 @@ modules:
           - org.kde.okular
           - io.github.peazip.PeaZip
           - org.signal.Signal
-          - org.strawberrymusicplayer.strawberry
           - com.github.unrud.VideoDownloader
           - io.github.flattool.Warehouse
           - com.heroicgameslauncher.hgl
