@@ -31,6 +31,11 @@ modules:
         - libreoffice
         - protontricks
         - strawberry
+        - gwenview
+        - haruna
+        - kamoso
+        - kcalc
+        - okular
         - kernel-devel # VirtualBox
         - kernel-headers # VirtualBox
         - gcc # VirtualBox
@@ -52,11 +57,6 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - com.usebottles.bottles
           - com.github.tchx84.Flatseal
-          - org.kde.gwenview
-          - org.kde.haruna
-          - org.kde.kamoso
-          - org.kde.kcalc
-          - org.kde.okular
           - io.github.peazip.PeaZip
           - org.signal.Signal
           - io.github.flattool.Warehouse
