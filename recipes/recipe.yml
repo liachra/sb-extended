@@ -55,12 +55,13 @@ modules:
         - elfutils-libelf-devel # VirtualBox
         - https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2-7.2.6_172322_fedora40-1.x86_64.rpm # VirtualBox
         - android-tools # adb, fastboot
-        - https://proton.me/download/mail/linux/1.12.1/ProtonMail-desktop-beta.rpm
         - dnf-plugins-core # Docker
         - docker-ce # Docker
         - docker-ce-cli # Docker
         - containerd.io # Docker
         - code
+        - https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm # Proton VPN
+        - proton-vpn-gnome-desktop # Proton VPN
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -73,7 +74,6 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - com.usebottles.bottles
           - com.github.tchx84.Flatseal
           - io.github.peazip.PeaZip
           - org.signal.Signal
@@ -83,6 +83,7 @@ modules:
           - io.ente.photos
           - com.ktechpit.whatsie
           - io.github.astralvixen.geforce-infinity
+          - me.proton.Mail
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: systemd
