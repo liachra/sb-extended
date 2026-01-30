@@ -17,6 +17,11 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
+  - type: kargs
+    kargs:
+      - ia32_emulation=1 # Allow 32bit support for Steam
+      - nosmt=force # Force disable SMT/Multi-threading
+  
   - type: dnf
     install:
       packages:
