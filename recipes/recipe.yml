@@ -60,7 +60,7 @@ modules:
         - docker-ce-cli # Docker
         - containerd.io # Docker
         - code
-        - https://repo.protonvpn.com/fedora-$(cat /etc/fedora-release | cut -d' ' -f 3)-stable/protonvpn-stable-release/protonvpn-stable-release-1.0.3-1.noarch.rpm # Proton VPN
+        - /etc/added-rpms/protonvpn-stable-release-1.0.3-1.noarch.rpm # Proton VPN
         - proton-vpn-gnome-desktop # Proton VPN
     remove:
       packages:
