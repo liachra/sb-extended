@@ -74,6 +74,8 @@ modules:
           - io.ente.photos
           - com.ktechpit.whatsie
           - io.github.astralvixen.geforce-infinity
+          - com.visualstudio.code
+          - com.vscodium.codium
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
