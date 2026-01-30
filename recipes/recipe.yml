@@ -60,8 +60,7 @@ modules:
         - docker-ce-cli # Docker
         - containerd.io # Docker
         - code
-        - /etc/added-rpms/protonvpn-stable-release-1.0.3-1.noarch.rpm # Proton VPN
-        - proton-vpn-gnome-desktop # Proton VPN
+        - proton-vpn-gnome-desktop
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
