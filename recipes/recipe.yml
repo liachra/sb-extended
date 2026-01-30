@@ -26,6 +26,7 @@ modules:
     repos:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
+        - /etc/yum.repos.d/vscode.repo
     install:
       packages:
         - trivalent-qt6-ui
@@ -59,6 +60,7 @@ modules:
         - docker-ce # Docker
         - docker-ce-cli # Docker
         - containerd.io # Docker
+        - code
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -81,8 +83,6 @@ modules:
           - io.ente.photos
           - com.ktechpit.whatsie
           - io.github.astralvixen.geforce-infinity
-          - com.visualstudio.code
-          - com.vscodium.codium
       - scope: user # Also add Flathub user repo, but no user packages
 
   - type: systemd
