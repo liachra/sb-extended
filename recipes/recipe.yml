@@ -23,6 +23,10 @@ modules:
       - nosmt=force # Force disable SMT/Multi-threading
   
   - type: dnf
+    repos:
+      cleaup: true
+      files:
+        - https://download.docker.com/linux/fedora/docker-ce.repo
     install:
       packages:
         - trivalent-qt6-ui
@@ -52,6 +56,10 @@ modules:
         - https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2-7.2.6_172322_fedora40-1.x86_64.rpm # VirtualBox
         - android-tools # adb, fastboot
         - https://proton.me/download/mail/linux/1.12.1/ProtonMail-desktop-beta.rpm
+        - dnf-plugins-core # Docker
+        - docker-ce # Docker
+        - docker-ce-cli # Docker
+        - containerd.io # Docker
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -77,5 +85,13 @@ modules:
           - com.visualstudio.code
           - com.vscodium.codium
       - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: systemd
+    system:
+      enabled:
+        - docker.service
+    user:
+      enabled:
+        - syncthing.service
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
