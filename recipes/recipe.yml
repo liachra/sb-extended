@@ -20,6 +20,12 @@ modules:
   - type: kargs
     kargs:
       - ia32_emulation=1 # Allow 32bit support for Steam
+
+  - type: signing
+      - vboxdrv.ko
+      - vboxnetflt.ko
+      - vboxnetadp.ko
+      - vboxpci.ko
   
   - type: dnf
     repos:
